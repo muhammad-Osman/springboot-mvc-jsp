@@ -94,6 +94,7 @@
                   container: container,
                   todayHighlight: true,
                   autoclose: true,
+                  endDate: '-18y'
                 };
                 date_input.datepicker(options);
               })
