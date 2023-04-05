@@ -8,13 +8,11 @@ import java.util.Date;
 
 @Entity
 @Table(name = "employees")
-@IdClass(EmployeePrimaryKey.class)
 public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Id
     private String manager;
     @NotNull(message = "First Name can't be empty")
     private String firstName;
